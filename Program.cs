@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 
 namespace QuickSort
 {
@@ -33,14 +33,14 @@ namespace QuickSort
                 Console.WriteLine("\n====================\n");
 
                 //get array elements
-                for(int i = 0; i < n; i++)
+                for (int i = 0; i < n; i++)
                 {
-                    Console.Write("<"+(i+1)+">");
-                    string s1 =Console.ReadLine();
+                    Console.Write("<" + (i + 1) + ">");
+                    string s1 = Console.ReadLine();
                     arr[i] = Int32.Parse(s1);
                 }
             }
-            
+
             //swaps the elements at index x with the elemnts at index y
             void swap(int x, int y)
             {
@@ -119,10 +119,10 @@ namespace QuickSort
                 Console.WriteLine("\nNumber of data movements: " + mov_count);
 
             }
-            static void main(string[]args)
+            static void main(string[] args)
             {
                 //declaring the object of the class
-                program mylist =new program();
+                program mylist = new program();
                 //accept array element
                 mylist.input();
                 //calling the sorting function
@@ -134,6 +134,5 @@ namespace QuickSort
                 Console.WriteLine("\nPres enter to exit");
                 Console.Read();
             }
-
-        }
+    }
 }

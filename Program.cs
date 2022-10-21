@@ -11,5 +11,28 @@ namespace QuickSort
 
         //number elements in array
         private int n;
+
+
+
+
+        void input()
+        {
+            while (true)
+            {
+                {
+                    
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }

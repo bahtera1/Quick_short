@@ -90,7 +90,20 @@ namespace QuickSort
                         mov_count++;
                     }
                 }
-                //j no
+                //j now contains index ot the element in the sorted list
+
+                if (low < j)
+                {
+                    //move the pivot to its crrect position in the list
+                    swap(low, j);
+                    mov_count--;
+                }
+                //sort the list in the left of pivot using quick sort
+                q_sort(low, j - 1);
+
+                //sort the list on the right of pivot using quick sort
+                q_sort(j + 1, high);
+            }
         }
 
 

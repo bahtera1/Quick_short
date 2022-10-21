@@ -119,31 +119,21 @@ namespace QuickSort
                 Console.WriteLine("\nNumber of data movements: " + mov_count);
 
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            static void main(string[]args)
+            {
+                //declaring the object of the class
+                program mylist =new program();
+                //accept array element
+                mylist.input();
+                //calling the sorting function
+                //first call to quick sort algorithm
+                mylist.q_sort(0, mylist.getSize() - 1);
+                //display sorted array
+                mylist.display();
+                //to exit from the console
+                Console.WriteLine("\nPres enter to exit");
+                Console.Read();
+            }
 
         }
-
-
-
-
-
-
-
-
-
-
-    }
 }

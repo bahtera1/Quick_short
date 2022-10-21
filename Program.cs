@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace QuickSort
 {
@@ -11,8 +15,6 @@ namespace QuickSort
 
         //number elements in array
         private int n;
-
-
 
 
         void input()
@@ -134,5 +136,5 @@ namespace QuickSort
                 Console.WriteLine("\nPres enter to exit");
                 Console.Read();
             }
-    }
-}
+        }
+}    

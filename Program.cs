@@ -94,7 +94,7 @@ namespace QuickSort
 
                 if (low < j)
                 {
-                    //move the pivot to its crrect position in the list
+                    //move the pivot to its correct position in the list
                     swap(low, j);
                     mov_count--;
                 }
@@ -104,6 +104,36 @@ namespace QuickSort
                 //sort the list on the right of pivot using quick sort
                 q_sort(j + 1, high);
             }
+
+            void display()
+            {
+                Console.WriteLine("--------------");
+                Console.WriteLine("Sorted Array Element");
+                Console.WriteLine("--------------");
+
+                for (int j = 0; j < n; j++)
+                {
+                    Console.WriteLine(arr[j]);
+                }
+                Console.WriteLine("\nNumber Of comparisons: " + cmp_count);
+                Console.WriteLine("\nNumber of data movements: " + mov_count);
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
 
 
